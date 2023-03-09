@@ -1,11 +1,11 @@
 import MainContent from "./components/MainContent";
-import Sidebar from "./components/sidebar";
+import Sidebar from "../src/components/Sidebar";
 import "./styles/components/app.sass";
 
 function App() {
   return (
     <div id="portifolio">
-      <h1>Hello World</h1>
+      <h2>Maria Fernanda</h2>
       <Sidebar />
       <MainContent />
     </div>
