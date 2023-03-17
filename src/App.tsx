@@ -1,14 +1,16 @@
-import MainContent from "./components/MainContent";
-import Sidebar from "../src/components/Sidebar";
-import "./styles/components/app.sass";
+import { Route, Routes } from "react-router-dom";
+import ProjectsPage from "./ProjectsPage";
+import "./styles/components/home.sass";
+import Home from "./Home";
 
 function App() {
   return (
-    <div id="portifolio">
-      <h2>Maria Fernanda</h2>
-      <Sidebar />
-      <MainContent />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+    </>
   );
 }
 
