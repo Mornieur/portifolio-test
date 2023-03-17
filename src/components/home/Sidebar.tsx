@@ -12,7 +12,7 @@ const Sidebar = () => {
       <InformationsContainer />
       <a
         className="btn"
-        href="./assets/docs/pdf/curriculum.pdf"
+        href="./src/docs/pdf/curriculum-maria.pdf"
         target="_blank"
         download
       >
