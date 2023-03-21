@@ -39,7 +39,7 @@ const Sidebar = () => {
       <InformationsContainer />
       <a
         className="btn"
-        href="./src/assets/pdf/curriculum-maria.pdf"
+        href="./pdf/curriculum-maria.pdf"
         target="_blank"
         download
       >
