@@ -9,8 +9,16 @@
     flex-wrap: wrap
     gap: 1.5rem
 
+    .technology-info
+      max-width: 100px
+      width: 100%
+      text-align: center
+      span
+        color: #a6a6a6
+        font-weight: 600
+        font-size: 1rem
+
     .technology-card
-      @include mixins.center
       gap: 1rem
       padding: 1rem
       border: 1px solid #333
@@ -19,13 +27,12 @@
       border-radius: variables.$card-border-radius
       margin: 0 auto
       display: flex
-      justify-content: center
+      justify-content: space-around
       align-items: center
 
       h3
         color: variables.$text-color
         margin-bottom: 1rem
-        background-color: green
 
       svg
         font-size: 5rem
