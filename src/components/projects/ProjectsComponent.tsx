@@ -12,6 +12,8 @@ import piano from "../../assets/projects-images/piano.png";
 import pokedex from "../../assets/projects-images/pokedex.png";
 import rickAndMorty from "../../assets/projects-images/rick-and-morty.png";
 import taskList from "../../assets/projects-images/task-list.png";
+import { ImArrowLeft2 } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 interface ProjectsTypes {
   img: any;
@@ -82,6 +84,10 @@ const dataProjects = [
 const ProjectsComponent = () => {
   return (
     <section className="container">
+      <Link to="/" className="iconLeft">
+        <ImArrowLeft2 className="backIcon" width={300} height={300} />
+      </Link>
+
       <h1 className="title">PROJETOS</h1>
       {dataProjects.map((item: ProjectsTypes) => (
         <div className="projects">
