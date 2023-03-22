@@ -3,6 +3,7 @@ import Avatar from "../../assets/me.jpg";
 import SocialNetworks from "./SocialNetworks";
 import InformationsContainer from "./InformationsContainer";
 import { motion } from "framer-motion";
+import BackgroundProfile from "../animated/BackgroundProfile";
 
 const imageAnimate = {
   offscreen: { x: -100, opacity: 0 },
@@ -17,6 +18,7 @@ const imageAnimate = {
 const Sidebar = () => {
   return (
     <aside id="sidebar">
+      <BackgroundProfile />
       <motion.div
         className="card"
         initial={"offscreen"}
@@ -24,12 +26,7 @@ const Sidebar = () => {
         viewport={{ once: false, amount: 0.5 }}
         transition={{ staggerChildren: 0.7 }}
       >
-        <motion.div
-          // whileHover={{ scale: 1.2 }}
-          // whileTap={{ scale: 0.8 }}
-          className="image-container"
-          variants={imageAnimate}
-        >
+        <motion.div className="image-container" variants={imageAnimate}>
           <img src={Avatar} alt="Maria Fernanda" />
         </motion.div>
       </motion.div>
