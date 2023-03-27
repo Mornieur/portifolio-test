@@ -4,6 +4,7 @@ import SocialNetworks from "./SocialNetworks";
 import InformationsContainer from "./InformationsContainer";
 import { motion } from "framer-motion";
 import BackgroundProfile from "../animated/BackgroundProfile";
+import curriculum from "../../assets/pdf/curriculum-maria.pdf";
 
 const imageAnimate = {
   offscreen: { x: -100, opacity: 0 },
@@ -34,12 +35,7 @@ const Sidebar = () => {
       <p className="title">Desenvolvedora Front-end</p>
       <SocialNetworks />
       <InformationsContainer />
-      <a
-        className="btn"
-        href="./../../../../pdf/curriculum-maria.pdf"
-        target="_blank"
-        download
-      >
+      <a className="btn" href={curriculum} target="_blank" download>
         Download do Currículo
       </a>
     </aside>
