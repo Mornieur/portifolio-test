@@ -29,6 +29,3 @@ Este projeto é facilmente personalizável. Basta seguir as instruções abaixo:
 
 Se você quiser contribuir para este projeto, sinta-se à vontade para criar um fork e enviar um pull request com suas alterações. Certifique-se de incluir testes para qualquer nova funcionalidade que você adicionar e certifique-se de que todos os testes existentes ainda estejam passando.
 
-## Licença
-
-Este projeto é licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
